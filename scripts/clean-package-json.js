@@ -15,7 +15,7 @@ function main() {
 
 	const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, { encoding: 'utf-8' }));
 
-	delete packageJson.private;
+	delete packageJson.private;  
 	delete packageJson.engines;
 	delete packageJson.devDependencies;
 	delete packageJson.scripts;
